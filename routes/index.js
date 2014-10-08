@@ -10,7 +10,7 @@ var auth           = ['fawcett', 'halloweenparty2014'];
  */
 
 exports.index = function(req, res){
-  res.render('index');
+  res.render('index', { collectionYear: collectionYear });
 };
 
 /**
