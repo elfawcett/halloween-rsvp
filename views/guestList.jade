@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Registered Guests
+
+  ul.guest-list
+    each guest in guests
+      li
+        h1 #{ guest.guestName }
+          small party of <strong>#{ guest.guestNumber }</strong>
+        p Bringing: #{ guest.guestFood }
+        p Description: #{ guest.guestDescribe }
+        p Registered: #{ guest.timestamp }
+
+        //- pre
+          each val, key in guest
+            | #{key} : #{val}
+            br

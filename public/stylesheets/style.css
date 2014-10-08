@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px Helvetica, Arial, sans-serif;
+  background-color: #333;
+  color: orange;
+}
+
+hr {
+  color: #222;
+  border-style: solid;
+}
+
+a {
+  color: #00B7FF;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+label.radio {
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1 > small,
+h2 > small,
+h3 > small,
+h4 > small,
+h5 > small,
+h6 > small {
+  margin-left: 1em;
+  font-size: 11px;
+}
+
+ul.guest-list {
+  margin: 0;
+  padding: 0;
+}
+
+ul.guest-list li {
+  border: solid 1px #222;
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 3px 10px;
+}
+
+ul.guest-list li > p {
+  margin: 0.25em 0;
+}
