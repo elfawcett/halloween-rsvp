@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Thank you!
+  p Here is what you submitted:
+    pre
+      each val, key in data
+        span #{ key }: #{ val }
+        br

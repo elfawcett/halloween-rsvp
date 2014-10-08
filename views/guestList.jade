@@ -2,6 +2,8 @@ extends layout
 
 block content
   h1 Registered Guests
+    small= guests.length
+      | &nbsp;total
 
   ul.guest-list
     each guest in guests

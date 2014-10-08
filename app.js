@@ -31,6 +31,8 @@ app.get('/', routes.index );
 app.post('/submit', routes.saveData );
 app.get('/thankyou', routes.reviewData );
 app.get('/guests', routes.guestList );
+app.get('/clear', routes.clearAllGuests );
+app.get('/clear/:passcode', routes.clearAllGuests );
 
 
 http.createServer(app).listen(app.get('port'), function(){
