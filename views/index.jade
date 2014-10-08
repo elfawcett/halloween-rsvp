@@ -1,8 +1,11 @@
 extends layout
 
 block content
-  h1 Halloween Party #{ collectionYear }
-  p Fill out the form and click Submit.
+  h1 Fawcett Halloween Party #{ collectionYear }
+  p The party starts at 7:30pm on Saturday, October 25, 2014.
+    |  <strong>Costumes are mandatory!</strong>
+
+  p To RSVP, please fill out the form and click Submit.
 
   hr
 
@@ -14,7 +17,7 @@ block content
     p
       label Number of guests including yourself
       select(name="guestNumber")
-        - for ( var i = 0; i <= 10; i++ )
+        - for ( var i = 1; i <= 10; i++ )
           option(value="#{i}") #{i}
 
     p
