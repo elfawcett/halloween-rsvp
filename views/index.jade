@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1 Fawcett Halloween Party #{ collectionYear }
-  p The party starts at 7:30pm on Saturday, October 31, 2015.
+  p The party starts at 7:30pm on Saturday, October 29, #{ collectionYear }.
     |  <strong>Costumes are mandatory!</strong>
 
   p To RSVP, please fill out the form and click Submit.
@@ -24,22 +24,22 @@ block content
       label You bringing food or drink?
       label.radio
         input(type="radio", name="guestFood", value="none")
-        | I am a starving artist; neither food nor drink accompanies me
+        | I am a starving artist; neither food nor drink accompanies me.
       label.radio
         input(type="radio", name="guestFood", value="food")
-        | I am bringing food
+        | I recently finished a hunt, and I am bringing food.
       label.radio
         input(type="radio", name="guestFood", value="drink")
-        | I am bringing drink (non-alcoholic)
+        | I am bringing drink suitable for children and adults alike (non-alcoholic).
       label.radio
         input(type="radio", name="guestFood", value="alcohol")
-        | I am bringing <em>drink (wink, wink)</em> (alcoholic)
+        | I am bringing the nectar of the gods (alcoholic).
       label.radio
         input(type="radio", name="guestFood", value="food and drink")
-        | I am awesome; I am bringing both food and drink
+        | I popped a Mentos and can tackle anything.  I am bringing both food and drink.
       label.radio
         input(type="radio", name="guestFood", value="food and alcohol")
-        | I MAKE A KING'S SALARY, AND SHALL BRING BOTH FOOD AND ALCOHOL!
+        | I MAKE A KING'S SALARY AND SHALL BRING BOTH FOOD AND ALCOHOL!
 
     p
       label Briefly describe what you bringin'
